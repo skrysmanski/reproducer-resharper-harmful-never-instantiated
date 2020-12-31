@@ -9,11 +9,11 @@ using Microsoft.Extensions.Logging;
 
 namespace ReSharperReproducer
 {
-    internal class Reproducer
+    internal class Program
     {
         public static void Main()
         {
-            GetServiceProvider().GetRequiredService<ILogger<Reproducer>>();
+            GetServiceProvider().GetRequiredService<ILogger<Program>>();
         }
 
         private static IServiceProvider GetServiceProvider()
